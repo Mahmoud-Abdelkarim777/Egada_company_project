@@ -1,0 +1,1090 @@
+/* start global rules  */
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+ul{
+    list-style: none;
+}
+/* end global rules  */
+/* small  */
+@media (max-width:992px) {
+    #navbar #logo{
+        display: flex;
+        align-items: center;
+        margin:0 !important;
+        padding: 0 !important ;
+    }
+    #navbar p{
+        margin: 0 5px ;
+    }
+    #search{
+        display: none;
+    }
+    #navbar a i{
+        font-size: 34px;
+        color: #094B72;
+    }
+    #navbar a P::before{
+        content: "L";
+        color: white;
+        position: absolute;
+        left: 29px;
+        font-family: "Poppins";
+        font-size: 20px;
+        font-weight: 700;
+    }
+    #navbar p{
+        font-family: "Poppins";
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 1.5px;
+        color: #2D2F30;
+    }
+    #nav-links a{
+        font-family: "Plus Jakarta Sans";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 1.5px;
+        text-align: left;
+        color: #2D2F30;
+    }
+    .heder-cont .company .icon-grid{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+        justify-content: space-between;
+        width: 275px;
+    }
+    .container .col-md-6 .img-fluid{
+        display: none;
+    }
+    .heder-cont .new{
+        
+        border-radius: 26px ;
+        background-color: #E7F6FF ;
+        padding: 10px;
+        width: 335px;
+    }
+    .heder-cont .new .text1{
+        background-color: #094B72;
+        border-radius: 26px ;
+        margin-right: 10px;
+    }
+    .heder-cont .new .text1 p{
+        width: 70px;
+        height: 30px;
+        margin-bottom: 0;
+        font-family: "Plus Jakarta Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 100px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .heder-cont .new .text2 p{
+        margin-bottom: 0;
+        font-family: "Plus Jakarta Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        width: 233px;
+        height: 30px;
+        color: #193E6C;
+        align-items: center !important;
+    }
+    .heder-cont h1{
+        margin-bottom: 40px;
+        font-family: "Playfair Display";
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #094B72;
+    }
+    .heder-cont p{
+        font-family: "Plus Jakarta Sans";
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 37.92px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        margin-bottom: 40px;
+        color: #4F4F4F;
+    }
+    .heder-cont .botton{
+        margin-bottom: 40px !important;
+        height: 60px;
+        background-color: #094B72 !important;
+    }
+    .name{
+        display: none;
+    }
+}
+@media(min-width:992px){
+    .heder-cont .botton{
+        background-color: #094B72 !important;
+    }
+}
+/* large  &  medium  */
+@media(min-width:992px){
+    #navbar{
+        MAX-width: 1110px;
+        margin-left: auto;
+        margin-right: auto;
+        /* background-color: #ada9a9; */
+        height: 100px;
+        color:  White;
+        padding: 0 !important ;
+    }
+    #navbar #logo{
+        display: flex;
+        align-items: center;
+        width: 144px;
+        height: 36px;
+        top: 32px;
+        margin:0 0 0 5px !important;
+        padding: 0 !important ;
+    }
+    #navbar p{
+        margin: 0 5px ;
+        width: 95px;
+        position: absolute;
+        left: 56px;
+        font-family: "Poppins";
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 1.5px;
+        color: #2D2F30;
+    }
+    #navbar a i{
+        font-size: 34px;
+        position: absolute;
+        left: 7px;
+        color: #094B72;
+    }
+    #navbar a P::before{
+        content: "L";
+        color: white;
+        position: absolute;
+        left: -42px;
+        font-family: "Poppins";
+        font-size: 20px;
+        font-weight: 700;
+        text-align: left;
+    }
+    #nav-links{
+        position: absolute;
+        height: 47px;
+        top: 26px;
+        left: 488px;
+        display: flex;
+        align-items:center;
+    }
+    #nav-links a{
+        font-family: "Plus Jakarta Sans";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 1.5px;
+        text-align: left;
+        color: #2D2F30;
+    }
+    #search{
+        width: 65px;
+        height: 99px;
+        position: absolute;
+        top: 1px;
+        left: 1045px;
+        border: none;
+    }
+    #search:hover{
+        background-color: #b1b1b1;
+    }
+    #search i{
+        color: #2d2f30;
+    }
+    /*  start hero section   */
+.container{
+    position: relative;
+    max-width: 1110px !important;
+    height: 746px;
+    top: 100px;
+    padding: 0 !important;
+}
+.container .col-md-6 .img-fluid{
+    position: absolute;
+    width: 1811px;
+    height: 819.94px;
+    top: -165px;
+    left: 53px;
+    z-index: 2;
+}
+.heder-cont .new{
+    width: 440px;
+    border-radius: 26px ;
+    background-color: #E7F6FF ;
+    padding: 10px;
+}
+.heder-cont .new .text1{
+    background-color: #094B72;
+    border-radius: 26px ;
+    margin-right: 10px;
+}
+.heder-cont .new .text1 p{
+    width: 70px;
+    height: 30px;
+    margin-bottom: 0;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.heder-cont .new .text2 p{
+    margin-bottom: 0;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    height: 30px;
+    color: #193E6C;
+}
+.heder-cont h1{
+    width: 891px;
+    height: 216px;
+    font-family: "Playfair Display";
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 108px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #094B72;
+}
+.heder-cont p{
+    width: 590px;
+    height: 76px;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 37.92px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+.heder-cont .botton{
+    width: 190px;
+    height: 80px;
+    border-radius: 8px;
+}
+.heder-cont .company{
+    margin-top: 20 px;
+    width: 540px;
+    height: 153px;
+}
+.heder-cont .company p{
+    width: 540px;
+    height: 31px;
+    margin-bottom: 40px;
+    font-family: "Plus Jakarta Sans";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30.91px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #8B8C8C;
+}
+.heder-cont .company .icon-grid{
+    display: flex;
+    width: 256px;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.ellipse1, .ellipse2 {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0; 
+}
+.ellipse1 {
+    width: 724px;
+    height: 720px;
+    background-color: rgba(110, 168, 255, 0.1);
+    top: -146px;
+    left: -27px;
+}
+.ellipse2 {
+    width: 600.21px;
+    height: 633.21px;
+    background: rgba(110, 168, 255, 0.1);
+    top: -146px;
+    left: 38px;
+}
+.name {
+    position: absolute;
+    bottom: 67px;
+    right: 0px;
+    width: 440px;
+    height: 114px;
+    border-radius: 10px 10px 10px 10px;
+    z-index: 3;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 39px 100px 0px #193E6C1F;
+}
+.name :nth-child(1){
+    margin: 0;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: #33475B;
+}
+.name :nth-child(2){
+    margin: 0;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: center;
+    color: #87898C;
+}
+    }
+/*  end hero section  */
+/* start section why  */
+.why{
+    background-color: #F2F7FF;
+}
+.why #boxes{
+    gap: 3rem;
+}
+.why .text{
+    width: 419.31px;
+    height: 302px;
+}
+.why .text h1{
+    font-family:" Playfair Display";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 63.98px;
+    letter-spacing: 0.32307693362236023px;
+    text-align: left;
+    color: #2D2F30;
+}
+@media(max-width:992px){
+    .why .text h1{
+        font-size: 43px;
+    }
+}
+.why .text p{
+    /* width: 270px; */
+    /* height: 144px; */
+    margin-top: 0 !important;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #8B8C8C;
+    width: 90%;
+}
+.why .boxes{
+    width: 60%;
+    height: 534px;
+    border-radius: 8px 0px 0px 0px;
+    gap: 18px;
+}
+@media(max-width :992px){
+    .container{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .why .boxes{
+        width:  100%;
+        height: fit-content;
+        /* align-self: center; */
+    }
+    .why .text{
+        margin-top: 40px;
+        width: 100%;
+        height: 302px;
+    }
+}
+.why .boxes .box1{
+    width:  259px;
+    height:  255px;
+    padding: 24px;
+    border-radius: 8px;
+    background: #FCFCFC;
+    box-shadow: 0px 18px 58px 16px #0000000F;
+}
+@media(max-width :992px){
+    .why .boxes .box1{
+        width: 100% !important;
+    }
+    .why .boxes .box2{
+        width: 100% !important;
+    }
+    .why .boxes .box3{
+        width: 100% !important;
+    }
+    .why .boxes .box4{
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+}
+.why .boxes .box1 .circle{
+    position: relative;
+    width: 37px;
+    height: 37px;
+}
+.why .boxes .box1 .circle :nth-child(1){
+    width: 21.4px;
+    height: 21.4px;
+    position: absolute;
+    top: 3.08px;
+    left: 12.52px;
+    color: #C3E8F1;
+    font-size: 21.4px;
+}
+.why .boxes .box1 .circle :nth-child(2){
+    width: 18.45px;
+    height: 18.45px;
+    position: absolute;
+    top: 10.79px;
+    left: 7.75px;
+    gap: 0px;
+    opacity: 0px;
+    color: #52A0B4;
+    font-size:  18.45px;
+}
+.why .boxes .box1 .circle :nth-child(3){
+    width: 15.42px;
+    height: 15.42px;
+    position: absolute;
+    top: 18.5px;
+    left: 3.08px;
+    gap: 0px;
+    opacity: 0px;
+    color: #027794;
+    font-size: 15.42px;
+}
+.why .boxes .box1 h4{
+    width: 181px;
+    height: 44px;
+    font-family: "Playfair Display";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #363940;
+}
+.why .boxes .box1 p{
+    width: 210px;
+    height: 96px;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: left;
+    color: #8B8C8C;
+}
+.why .boxes .box2 {
+    width:  259px;
+    height:  255px;
+    padding: 24px;
+    border-radius: 8px;
+    background: #FCFCFC;
+    box-shadow: 0px 18px 58px 16px #0000000F;
+}
+.why .boxes .box2 .bag{
+    width: 37px;
+    height: 37px;
+    position: relative;
+}
+.why .boxes .box2 .bag i{
+    width: 30.83px;
+    height: 27.75px;
+    top: 4.63px;
+    left: 3.08px;
+    color: #027794;
+    font-size: 30.83px;
+}
+.why .boxes .box2 h4{
+    width: 269px;
+    height: 44px;
+    color: #363940;
+    font-family: "Playfair Display";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+.why .boxes .box2 p{
+    width: 206px;
+    height: 72px;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: left;
+    color: #8B8C8C;
+}
+.why .boxes .box3 {
+    width:  259px;
+    height:  255px;
+    padding: 24px;
+    border-radius: 8px ;
+    background: #FCFCFC;
+    box-shadow: 0px 18px 58px 16px #0000000F;
+}
+.why .boxes .box3 .rocket{
+    width: 37px;
+    height: 37px;
+}
+.why .boxes .box3 .rocket i{
+    width: 28.73px;
+    height: 28.87px;
+    font-size: 28.73px;
+    color: #C3E8F1;
+}
+.why .boxes .box3 h4{
+    width: 271px;
+    height: 44px;
+    font-family: "Playfair Display";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: left;
+}
+.why .boxes .box3 p{
+    width: 210px;
+    height: 96px;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: left;
+    color: #8B8C8C;
+}
+.why .boxes .box4 {
+    width:  259px;
+    height:  255px;
+    padding: 24px;
+    border-radius: 8px;
+    background: #FCFCFC;
+    box-shadow: 0px 18px 58px 16px #0000000F;
+}
+.why .boxes .box4 .user{
+    width: 37px;
+    height: 37px;
+}
+.why .boxes .box4 .user i{
+    width: 37px;
+    height: 37px;
+}
+.why .boxes .box4 h4{
+    width: 149px;
+    height: 22px;
+    font-family: "Playfair Display";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    color: #363940;
+}
+.why .boxes .box4 p{
+    width: 223px;
+    height: 96px;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: left;
+    color: #8B8C8C;
+}
+/* end section why */
+/* start achievment  */
+.achievment{
+    background: #094B72;
+    color: #C3E8F1; /* remove this line */
+}
+.achievment .heading{
+    width: 730px;
+    gap: 8px;
+}
+@media(max-width:992px){
+    .achievment .heading{
+        width: 100%;
+        gap: 8px;
+    }
+    .achievment .heading h1{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .achievment .heading p{
+        width: 100% !important;
+    }
+}
+.achievment .heading h1{
+    width: 730px;
+    height: 64px;
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 64px;
+    letter-spacing: 0.005em;
+    text-align: center;
+    color: #FFFFFF;
+}
+.achievment .heading p{
+    width: 730px;
+    height: 32px;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.achievment .count .client,.taken,.year{
+    width: 255px;
+}
+@media(max-width:992px){
+    .achievment .count{
+        align-items: center;
+        flex-direction: column !important;
+        text-align: center;
+    }
+    .achievment .count .client{
+        margin: 0 !important;
+    }
+    .divider1,.divider2{
+        display: none;
+    }
+}
+.achievment .count .divider1,.divider2{
+    border-right:2px solid #6B93AA ;
+}
+.achievment .count h1{
+    width: 255px;
+    height: 64px;
+    font-family: "Poppins";
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+}  
+.achievment .count p{
+    width: 255px;
+    height: 32px;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.003em;
+    text-align: center;
+    color: #FFFFFF;
+}  
+/* end achievment  */
+/* start testimonial  */
+.testimonial{
+    height: 32.5rem;
+    background: #F2F7FF;
+}
+.testimonial .main{
+    top: 0 !important;
+    height: 29rem;
+    background: #F2F7FF;
+}
+@media (max-width:992px){
+    .testimonial{
+        height: 37rem;
+     
+    }
+    .testimonial .main{
+    top: 0 !important;
+    height: 37rem;
+    background: #F2F7FF;
+}
+    .main{
+        height: 35.5rem;
+    }
+
+}
+#Clients-Testimonial{
+    font-family: "Playfair Display";
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+@media (max-width:992px){
+    #Clients-Testimonial{
+        margin-top: 15px;
+        font-size: 35px;
+    }
+    .user1 {
+        /* height: 85% !important; */
+        padding: 10px;
+    }
+}
+.user1 {
+    /* height: 60%; */
+    padding: 10px;
+}
+
+.user1  h4{
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+    color: #2D2F30;
+    min-height: 28px;
+}
+.user1 p{
+    /* width: 100%; */
+    /* height: 80%; */
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #4F4F4F;
+    min-height: 96px;
+}
+@media(max-width:992px){
+    .user1  h4{
+        min-height: 56px;
+    }
+    .user1 p{
+        min-height: 135px;
+    }
+}
+.icon .info{
+    margin-top: 20px;
+    width: 200px;
+}
+.icon .info h4{
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    color: #151617;
+    margin-bottom: 0 !important;
+    width: 130%;
+}
+.icon .info p{
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #4F4F4F;
+    margin-bottom: 0 !important;
+    width: 130%;
+}
+
+@media(max-width:992px){
+    .icon {
+        width: 262px;
+        margin-bottom: 40px;
+    }
+}
+.icon .img {
+    margin-right: 15px;
+}
+.icon img {
+    width: 50px;
+}
+swiper-container {
+    width: 100%;
+    height: 85%;
+}
+swiper-slide {
+    text-align: center;
+    margin-left: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* end testimonial  */
+/* start section question  */
+@media(min-width:992px){
+    .question .main-cont{
+    height: 23rem !important;
+    top: 40px !important;
+    }
+}
+.question .complex{
+    gap: 2rem;
+}
+.question .complex h2{
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #2D2F30;
+}
+.question .complex .p{
+    font-family: "Poppins";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #4F4F4F;
+}
+.question .complex .p2{
+    font-family: "Inter";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #F9F8F9;
+}
+.question .complex .call{
+    background-color: #094B72;
+    margin-bottom: 1rem;
+}
+@media(max-width){
+    .question .complex .call{
+        margin-bottom: 2rem;
+    }
+}
+.question .image img{
+    border-radius: 0 0 0 40px;
+}
+@media(max-width:992px){
+    .question .image img{
+        display: none;
+    }
+    .content{
+        margin: 0 !important;
+    }
+    .question .complex{
+        justify-content: center;
+    }
+    .question .complex h2{
+        font-size: 30px;
+    }
+    .question .complex .p{
+        text-align: center;
+    }
+}
+/* end section question  */
+/* start footer  */
+.footer{
+    height: 22rem;
+    background-color: #094B72;
+}
+.footer .main{
+    height: 22rem;
+    top: 0;
+    background-color: #094B72;
+}
+@media(max-width:992px){
+    .footer .main{
+        height: 27rem;
+        padding: 0 !important;
+    }
+    .footer .support , .company , .product{
+        padding-right: 0px;
+        padding-left: 15px;
+    }
+}
+.footer .main .sub-main{
+    padding-top: 4rem;
+}
+@media(max-width:992px){
+    .footer .main .sub-main{
+        margin: 0;
+    }
+}
+.footer .main .sub-main .logo{
+    width: 50px; 
+    height: 55px;
+    padding-left: 0;
+}
+@media(max-width:992px){
+    .footer .main .logo{
+        padding-left: 15px !important;
+    }
+}
+.footer .main .sub-main .logo p{
+    margin-bottom: 0;
+    margin-left: 1rem;
+    font-family: "Poppins";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 1.5px;
+    text-align: left;
+    color: #F9F8F9;
+}
+.footer .main .text h5{
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: #F4F5F7;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.footer .main .text p{
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #EEEFF4;
+}
+/* end footer  */
+/* start foot  */
+.foot{
+    height: 70px;
+    background-color: #004D7B !important;
+}
+@media (max-width:992px) {
+    .foot{
+        height: 0;
+    }
+    .foot .main{
+        position: relative;
+        top: 80px;
+        height: fit-content;
+        justify-content: center;
+    }
+    .foot .main .icons{
+        justify-content: center !important;
+    }
+    .foot .main .rights{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem ;
+    }
+}
+.foot .main{
+    top: 0;
+    height: fit-content;
+    padding-top: 23px !important;
+    padding-bottom: 23px !important;
+    background-color: #004D7B !important;
+}
+.foot .main .rights p{
+    margin-bottom: 0;
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #D9DBE1;
+}
+.foot .main .icons{
+    gap: 1.5rem;
+}
+/* end foot  */
+/* start board */
+.button-add{
+    color: white;
+    border: 1px solid #17A2B8;
+}
+.button-home{
+    border: 1px solid #17A2B8;
+    padding: 10px 48px;
+    width: 136px;
+    margin-top: 40px;
+    margin-left: 55px;
+}
+
+
+table thead{
+    color: white;
+}
+tbody tr:hover{
+    background-color: #eee;
+}
+tbody tr .update{
+    cursor: pointer;
+}
+tbody tr .update:hover{
+    color: blue;
+}
+tbody tr .delete{
+    cursor: pointer;
+}
+tbody tr .delete:hover{
+    color: red;
+}
+
+/* end board */
+.swiper-wrapper {
+    margin-top: 40px;
+    height: 370px !important;
+}
+
+@media (max-width:992px) {
+    .swiper {
+        width: 330px;
+        height: 29rem !important;
+    }
+    .swiper-wrapper {
+        margin-top: 40px;
+        /* height: 300px !important; */
+        /* background-color: rebeccapurple; */
+    }
+    .swiper-backface-hidden .swiper-slide {
+        width: 330px !important;
+        height: 26rem;
+    }
+}
+
+/* jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj */
+.star-rating {
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .star {
+    font-size: 2rem;
+    color: #d3d3d3; /* Light gray for empty stars */
+    transition: color 0.2s ease;
+  }
+  
+  .star.filled {
+    color: #ffd700; /* Gold for filled stars */
+  }
+  
+
+
